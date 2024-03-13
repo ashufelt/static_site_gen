@@ -25,6 +25,11 @@ def text_node_to_html_node(text_node):
         return LeafNode("img", "", {"src":text_node.url, "alt":text_node.value})
     raise ValueError("Invalid text node type")
 
+def split_nodes_delimiter(old_nodes, delimiter, text_type):
+    if delimiter is null or delimiter == "":
+        raise ValueError("Invalid delimiter")
+    for node in old_nodes:
+
 
 def main():
     example_node = TextNode("This is a test node", "bold", "https://www.boot.dev")
