@@ -1,7 +1,6 @@
 import unittest
 
-from textnode import TextNode
-from main import text_to_textnodes, TextType
+from textnode import TextNode, text_to_textnodes, TextType
 
 class TestTextToTextNodes(unittest.TestCase):
     def test_bootdev_example(self):
