@@ -6,15 +6,15 @@ class TestBlockToBLockType(unittest.TestCase):
 
     #### Heading tests ####
     def test_heading_1(self):
-        text = "# heading "
+        text = "# The Unparalleled Majesty of \"The Lord of the Rings\""
         self.assertEqual(BlockType.heading, block_to_block_type(text))
     
     def test_heading_2(self):
-        text = "## heading"
+        text = "## another heading"
         self.assertEqual(BlockType.heading, block_to_block_type(text))
     
     def test_heading_3(self):
-        text = "### heading"
+        text = "### morehead"
         self.assertEqual(BlockType.heading, block_to_block_type(text))
     
     def test_heading_4(self):
